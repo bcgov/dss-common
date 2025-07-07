@@ -1,0 +1,9 @@
+{
+  "input": {
+    "csv_file": "INPUT CSV FILE NAME",
+    "mapping_file": "CATEGORY MAPPING FILE NAME",
+    "team_name": "TEAM NAME"
+  },
+  "": "Use processes below to list the desired output. If none are listed all will be completed.",
+  "processes": []
+}

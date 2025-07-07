@@ -1,0 +1,55 @@
+{
+  "": "Add new team names below with the following structre to use this file to map other teams",
+  "DevOps": {
+    "IT Service Operations": [
+      "Service Request & Client Support",
+      "Change Management",
+      "Incident Response",
+      "Problem Analysis",
+      "Monitoring and Event Management"
+    ],
+    "Infrastructure, DevOps & Automation": [
+      "Public Cloud Infrastructure",
+      "Private Cloud Infrastructure",
+      "CI/CD & Automation",
+      "Networking",
+      "BC Gov Networking",
+      "Containerization",
+      "Windows Server Management",
+      "Linux Server Management"
+    ],
+    "Architecture, Engineering & Design": [
+      "Technical Architecture",
+      "Site Reliability Engineering",
+      "Software Design"
+    ],
+    "Security & Identity Management": [
+      "Identity & Access Management",
+      "Cybersecurity & Threat Management"
+    ],
+    "Software Development": [
+      "Programming",
+      "API Development",
+      "Database Management",
+      "Frontend Development Frameworks",
+      "Backend Development Frameworks",
+      "Data Management & Processing"
+    ],
+    "Artificial Intelligence": [
+      "Generative AI Tools",
+      "Machine Learning & Predictive Analytics",
+      "Deep Learning/Neural Networks"
+    ],
+    "Analysis & Planning": [
+      "Documentation",
+      "Project Management",
+      "Business Analysis",
+      "Data Analysis"
+    ],
+    "Geospatial & Mapping Technologies": [
+      "GIS & Spatial Data Processing",
+      "Cartography & Geographic Analysis",
+      "Geospatial Data & Web Services"
+    ]
+  }
+}
