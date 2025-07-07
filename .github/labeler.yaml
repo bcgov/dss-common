@@ -1,0 +1,12 @@
+# Auto Label Git Action Config
+# https://github.com/marketplace/actions/labeler
+# As new folders are created new lables can be added here.
+
+'Github Actions':
+  - .github/workflows/**/*
+
+'Skills Analysis':
+  - 'skills_analysis/'
+
+Documentation:
+  - '**/*.md'
