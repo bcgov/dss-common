@@ -3,7 +3,6 @@ Script used to generate Mad Libs-style bios from a CSV file.
 The CSV file is created from exporting data collected by a Microsoft Teams Form.
 The Mad Libs output is a new CSV file.
 """
-import pandas as pd
 
 # Column names to use for the Mad Libs
 COLUMNS = [
@@ -79,31 +78,3 @@ def row_to_madlib(row):
     mad_libs_name_data = {"FullName": full_name, "Mad Libs": filled_mad_libs}
 
     return mad_libs_name_data
-
-def create(df, output_csv_file):
-    """
-    Main function to create Mad Libs CSV from a dataframe.
-    Please use row_to_madlib for processing a single row.
-
-    Parameters:
-        input_dataframe (DataFrame): Data read from input file.
-        output_csv_file (str): Path to the output CSV file.
-
-    Outputs:
-        CSV file with Mad Libs responses.
-    """
-
-    mad_libs_list = []
-
-    for row in df.iterrows():
-        value = row[1]
-        mad_libs_data = {}
-        for col in COLUMNS:
-            mad_libs_data[col] = value.get(col, "N/A")
-
-        filled_mad_libs = TEMPLATE.format(**mad_libs_data)
-        full_name = value.get("Name", "N/A")  # Assuming "Name" is the full name column
-        mad_libs_list.append({"FullName": full_name, "Mad Libs": filled_mad_libs})
-
-    output_df = pd.DataFrame(mad_libs_list)
-    output_df.to_csv(output_csv_file, index=False, encoding="utf-8")
