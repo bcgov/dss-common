@@ -80,7 +80,7 @@ def set_fut_headers(row, mapping):
     global FUT_COLS
 
     use = r"^Which.(.*).skills would you like to use in your day-to-day work,"\
-       " or feel are underused\?$"
+       r" or feel are underused\?$"
     learn = r"^Are there.(.*).skills you are interested in learning or continuing to develop\?$"
 
     for category in mapping.keys():
@@ -244,9 +244,9 @@ def set_cur_headers(row, mapping):
     global COMMON_COL_MAPPING
 
     # common structure to skill questions for self and team
-    self = "^How would you describe your current experience or comfort level with.(.*)\?\.(.*)$"
-    team = "^Based on what you know today, what level of.(.*).skills do you think your team will"\
-       " need over the next 12 months\?\.(.*)$"
+    self = r"^How would you describe your current experience or comfort level with.(.*)\?\.(.*)$"
+    team = r"^Based on what you know today, what level of.(.*).skills do you think your team will"\
+       r" need over the next 12 months\?\.(.*)$"
 
     # create a new structure for holding column numbers for each of the CATEGORY and SUBCATEGORY
     for category in mapping.keys():
