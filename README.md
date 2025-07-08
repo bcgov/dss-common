@@ -9,15 +9,16 @@ Used to capture work done within and across the DSS DevOps chapter. View the REA
 
 ## Directory
 
-| Item                 | Description                                                 |
-| -------------------- | ----------------------------------------------------------- |
-| `.github/`           | Holds Github related files. See below for more informaiton  |
-| `.gitignore`         | Defined files not to be tracked by Github                   |
-| `CODE_OF_CONDUCT.md` | Sets standards for contributing to this repository.         |
-| `LICENSE`            | The Apache 2.0 license documentation.                       |
-| `README.md`          | This document                                               |
+| Item                 | Description                                                    |
+| -------------------- | -------------------------------------------------------------- |
+| `.github/`           | Holds Github related files. See below for more informaiton     |
+| `.gitignore`         | Defined files not to be tracked by Github                      |
+| `skills_analysis/`   | Directory of files for the creation of skills analysis reports |
+| `CODE_OF_CONDUCT.md` | Sets standards for contributing to this repository.            |
+| `LICENSE`            | The Apache 2.0 license documentation.                          |
+| `README.md`          | This document                                                  |
 
-## .github
+## `.github`
 
 ### Overview
 
@@ -28,7 +29,7 @@ The `/github` folder holds any content that is to be used by Github (workflows, 
 | Item                    | Description                            |
 | ----------------------- | -------------------------------------- |
 | `workflows`             | Folder holding all workfolows          |
-|  ---- `pr-labeller.yml` | Action to add `labeler.yaml` to PRs    |
+|  \|-- `pr-labeller.yml` | Action to add `labeler.yaml` to PRs    |
 | `labeler.yaml`          | Labels to be applied to pull requests. |
 | `PULL_REQUEST_TEMPLATE` | Standard pull request template         |
 
